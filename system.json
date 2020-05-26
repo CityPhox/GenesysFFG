@@ -26,7 +26,7 @@
   "primaryTokenAttribute": "wounds",
   "secondaryTokenAttribute": "strain",
   "url": "https://github.com/Esrin/StarWarsFFG/tree/esrin-dev",
-  "manifest": "https://raw.githubusercontent.com/CityPhox/GenesysFFG-/esrin-dev/system.json",
-  "download": "https://github.com/Esrin/StarWarsFFG/releases/download/esrin-dev_0.05/esrin-dev_0.052.zip",
+  "manifest": "https://raw.githubusercontent.com/CityPhox/GenesysFFG/master/system.json",
+  "download": "https://github.com/CityPhox/GenesysFFG/archive/0.023.zip",
   "license": "LICENSE.txt"
 }
