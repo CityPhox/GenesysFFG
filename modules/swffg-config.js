@@ -20,6 +20,44 @@ FFG.character_stats = {
 };
 
 FFG.skills = {
+	"Alchemy": "Alechmy",
+	"Astrocartography": "Alchmey",
+	"Athletics": "Athletics",
+	"Computers": "Computers",
+	"Cool": "Cool",
+	"Coordination": "Coordination",
+	"Discipline": "Discipline",
+	"Driving": "Driving",
+	"Mechanics": "Mechanics",
+	"Medicine": "Medicine",
+	"Operating": "Operating",
+	"Perception": "Perception",
+	"Piloting": "Piloting",
+	"Resilience": "Resilience",
+	"Riding": "Riding",
+	"Skulduggery": "Skulduggery",
+	"Stealth": "Stealth",
+	"Streetwise": "Streetwise",
+	"Survival": "Survival",
+	"Vigilance": "Vigilance",
+	"Arcana": "Arcana",
+	"Divine": "Divine",
+	"Primal": "Primal",
+	"Brawl": "Brawl",
+	"Gunnery": "Gunnery",
+	"Melee": "Melee",
+	"Melee - Heavy": "Melee - Heavy",
+	"Melee - Light": "Melee - Light",
+	"Ranged": "Ranged",
+	"Ranged - Heavy": "Ranged - Heavy",
+	"Ranged - Light": "Ranged - Light",
+	"Charm": "Charm",
+	"Coercion": "Coercion",
+	"Deception": "Deception",
+	"Leadership": "Leadership",
+	"Negotiation": "Negotiation",
+	"Knowledge": "Knowledge",
+/** Star Wars skills
   "Brawl": "Brawl",
   "Gunnery": "Gunnery",
   "Lightsaber": "Lightsaber",
@@ -55,9 +93,12 @@ FFG.skills = {
   "Knowledge: Underworld": "Knowledge: Underworld",
   "Knowledge: Warfare": "Knowledge: Warfare",
   "Knowledge: Xenology": "Knowledge: Xenology",
+ **/
 };
 
 FFG.skills.knowledgestripped = {
+"Knowledge": "Knowledge",
+/** Star Wars skills  
   "Knowledge: Core Worlds": "Core Worlds",
   "Knowledge: Education": "Education",
   "Knowledge: Lore": "Lore",
@@ -65,6 +106,7 @@ FFG.skills.knowledgestripped = {
   "Knowledge: Underworld": "Underworld",
   "Knowledge: Warfare": "Warfare",
   "Knowledge: Xenology": "Xenology",
+**/
 };
 
 FFG.ranges = {
@@ -94,8 +136,13 @@ FFG.fire_arcs = {
 FFG.combat_skills = {
   "Brawl": "Brawl",
   "Gunnery": "Gunnery",
+  /**
   "Lightsaber": "Lightsaber",
+  **/
   "Melee": "Melee",
+  "Melee - Heavy": "Melee - Heavy",
+  "Melee - Light": "Melee - Light",
+  "Ranged": "Ranged",
   "Ranged: Light": "Ranged: Light",
   "Ranged: Heavy": "Ranged: Heavy",
 };
@@ -103,8 +150,11 @@ FFG.combat_skills = {
 FFG.combat_skills.abrev = {
   "Brawl": "B",
   "Gunnery": "G",
-  "Lightsaber": "LS",
+  /** "Lightsaber": "LS", **/
   "Melee": "M",
+  "Melee - Heavy": "MH"
+  "Melee - Light": "ML"
+  "Ranged": "R",
   "Ranged: Light": "RL",
   "Ranged: Heavy": "RH",
 };

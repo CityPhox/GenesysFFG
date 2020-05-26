@@ -148,11 +148,15 @@
           <input class="filter-control" type="radio" id="all" name="skillfilter" />
           <label for="all">All</label>
           <input class="filter-control" type="radio" id="Combat" name="skillfilter" />
-          <label for="combat">Combat</label><br />
+          <label for="Combat">Combat</label><br />
           <input class="filter-control" type="radio" id="General" name="skillfilter" />
-          <label for="general">General</label><br />
+          <label for="General">General</label><br />
           <input class="filter-control" type="radio" id="Knowledge" name="skillfilter" />
-          <label for="knowledge">Knowledge</label>
+          <label for="Knowledge">Knowledge</label>
+		  <input class="filter-control" type="radio" id="Magic" name="skillfilter" />
+          <label for="Magic">Magic</label>
+		  <input class="filter-control" type="radio" id="Social" name="skillfilter" />
+          <label for="Social">Social</label>
         </div>
       </fieldset>
       <div class="tableWithHeader">
@@ -236,6 +240,68 @@
             </thead>
             <tbody>
               {{#each data.skills as |skill id|}} {{#iff skill.type '==' 'Knowledge'}}
+              <tr data-ability="{{id}}" data-skilltype="{{skill.type}}" class="skill">
+                <td>{{lookup ../this.FFG.skills.knowledgestripped [id]~}} {{#with (lookup ../this.data.characteristics [characteristic])~}} ({{abrev}}) {{/with}}</td>
+                <td>
+                  <input style="margin: 0; padding: 0;" class="careerskill-toggle" type="checkbox" name="data.skills.{{id}}.careerskill" data-dtype="Boolean" {{checked skill.careerskill}} />
+                </td>
+                <td>
+                  <input style="width: 30px; text-align: center;" name="data.skills.{{id}}.rank" value="{{skill.rank}}" type="text" min="0" max="6" data-dtype="Number" placeholder="0" />
+                </td>
+                <td>
+                  <!--                        <img class="roll-button" src="icons/dice/d20black.svg">-->
+                  <div class="roll-button dice-pool"></div>
+                </td>
+              </tr>
+              {{/iff}} {{/each}}
+            </tbody>
+          </table>
+		  <table>
+            <h1>Magic</h1>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td style="position: relative;" class="hover">
+                  CS
+                  <div class="tooltip">Career Skill</div>
+                </td>
+                <td>Rank</td>
+                <td>Roll</td>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each data.skills as |skill id|}} {{#iff skill.type '==' 'Magic'}}
+              <tr data-ability="{{id}}" data-skilltype="{{skill.type}}" class="skill">
+                <td>{{lookup ../this.FFG.skills.knowledgestripped [id]~}} {{#with (lookup ../this.data.characteristics [characteristic])~}} ({{abrev}}) {{/with}}</td>
+                <td>
+                  <input style="margin: 0; padding: 0;" class="careerskill-toggle" type="checkbox" name="data.skills.{{id}}.careerskill" data-dtype="Boolean" {{checked skill.careerskill}} />
+                </td>
+                <td>
+                  <input style="width: 30px; text-align: center;" name="data.skills.{{id}}.rank" value="{{skill.rank}}" type="text" min="0" max="6" data-dtype="Number" placeholder="0" />
+                </td>
+                <td>
+                  <!--                        <img class="roll-button" src="icons/dice/d20black.svg">-->
+                  <div class="roll-button dice-pool"></div>
+                </td>
+              </tr>
+              {{/iff}} {{/each}}
+            </tbody>
+          </table>
+		  <table>
+            <h1>Social</h1>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td style="position: relative;" class="hover">
+                  CS
+                  <div class="tooltip">Career Skill</div>
+                </td>
+                <td>Rank</td>
+                <td>Roll</td>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each data.skills as |skill id|}} {{#iff skill.type '==' 'Social'}}
               <tr data-ability="{{id}}" data-skilltype="{{skill.type}}" class="skill">
                 <td>{{lookup ../this.FFG.skills.knowledgestripped [id]~}} {{#with (lookup ../this.data.characteristics [characteristic])~}} ({{abrev}}) {{/with}}</td>
                 <td>
