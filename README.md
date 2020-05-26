@@ -17,7 +17,7 @@ This is an implementation of the [Fantasy Flight Games Genesys](https://www.fant
 2. Go to the "Game Systems" Tab
 3. Click the "Install System" button
 4. Copy the Following link into the "Manifest URL" section:
-   https://raw.githubusercontent.com/Esrin/StarWarsFFG/esrin-dev/system.json
+   https://raw.githubusercontent.com/CityPhox/StarWarsFFG/master/system.json
 5. Click Install, after a few seconds the system should be installed.
 
 # To-do
